@@ -1,4 +1,4 @@
-package uk.ac.york.eng2.books.dto;
+package uk.ac.york.eng2.bookscli.dto;
 
 import io.micronaut.serde.annotation.Serdeable;
 

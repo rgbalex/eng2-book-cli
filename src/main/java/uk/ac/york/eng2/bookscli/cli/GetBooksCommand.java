@@ -1,7 +1,7 @@
-package uk.ac.york.eng2.books.cli;
+package uk.ac.york.eng2.bookscli.cli;
 
 import picocli.CommandLine.Command;
-import uk.ac.york.eng2.books.domain.Book;
+import uk.ac.york.eng2.bookscli.domain.Book;
 
 @Command(name = "get-books", description = "Get a list of all books")
 public class GetBooksCommand implements Runnable {

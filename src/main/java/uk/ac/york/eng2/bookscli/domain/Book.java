@@ -1,4 +1,4 @@
-package uk.ac.york.eng2.books.domain;
+package uk.ac.york.eng2.bookscli.domain;
 
 import io.micronaut.serde.annotation.Serdeable;
 
