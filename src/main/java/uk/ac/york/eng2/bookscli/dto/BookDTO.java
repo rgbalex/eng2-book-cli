@@ -7,6 +7,11 @@ public class BookDTO {
     private String title;
     private Integer year;
 
+    public BookDTO(String title, Integer year) {
+        this.title = title;
+        this.year = year;
+    }
+
     public String getTitle() {
         return title;
     }
