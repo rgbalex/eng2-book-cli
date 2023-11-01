@@ -1,7 +1,5 @@
 package uk.ac.york.eng2.bookscli.cli.commands;
 
-import io.micronaut.context.annotation.Parallel;
-import io.micronaut.context.annotation.Parameter;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.Parameters;
