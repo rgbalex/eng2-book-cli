@@ -21,6 +21,9 @@ public interface BookClient {
     @Get("/{id}/readers")
     public Iterable<User> listReaders(long id);
 
+    @Put("/{bookId}/readers/{readerId}")
+    public HttpResponse<Void> updateBookReaders(long bookId, long readerId);
+
     @Post("/")
     public HttpResponse<Void> add(@Body BookDTO bookDetails);
 

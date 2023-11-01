@@ -23,7 +23,7 @@ public class GetBookReadersCommand implements Runnable {
             return;
         } else if (!readers.iterator().hasNext()) {
             System.out.println("No readers found");
-            return;
+            // return;
         }
 
         for (User reader : readers) {
