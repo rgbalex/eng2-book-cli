@@ -9,6 +9,7 @@ import io.micronaut.http.annotation.Put;
 import io.micronaut.http.client.annotation.Client;
 
 import uk.ac.york.eng2.bookscli.domain.Book;
+import uk.ac.york.eng2.bookscli.domain.User;
 import uk.ac.york.eng2.bookscli.dto.BookDTO;
 
 @Client("${books.url:`http://localhost:8080/books`}")
@@ -16,6 +17,9 @@ public interface BookClient {
 
     @Get("/")
     public Iterable<Book> list();
+
+    @Get("/{id}/readers")
+    public Iterable<User> listReaders(long id);
 
     @Post("/")
     public HttpResponse<Void> add(@Body BookDTO bookDetails);
