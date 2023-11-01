@@ -7,6 +7,7 @@ import uk.ac.york.eng2.bookscli.cli.commands.AddBookCommand;
 import uk.ac.york.eng2.bookscli.cli.commands.AddBookReaderCommand;
 import uk.ac.york.eng2.bookscli.cli.commands.AddUserCommand;
 import uk.ac.york.eng2.bookscli.cli.commands.DeleteBookCommand;
+import uk.ac.york.eng2.bookscli.cli.commands.DeleteBookReaderCommand;
 import uk.ac.york.eng2.bookscli.cli.commands.DeleteUserCommand;
 import uk.ac.york.eng2.bookscli.cli.commands.GetBookCommand;
 import uk.ac.york.eng2.bookscli.cli.commands.GetBookReadersCommand;
@@ -35,6 +36,7 @@ import uk.ac.york.eng2.bookscli.cli.commands.UpdateUserCommand;
             // Many to Many Commands
             GetBookReadersCommand.class, 
             AddBookReaderCommand.class,
+            DeleteBookReaderCommand.class,
         }
     )
 public class BookCliCommand implements Runnable {

@@ -16,23 +16,26 @@ import uk.ac.york.eng2.bookscli.dto.BookDTO;
 public interface BookClient {
 
     @Get("/")
-    public Iterable<Book> list();
+    Iterable<Book> list();
 
     @Get("/{id}/readers")
-    public Iterable<User> listReaders(long id);
+    Iterable<User> listReaders(long id);
 
     @Put("/{bookId}/readers/{readerId}")
-    public HttpResponse<Void> updateBookReaders(long bookId, long readerId);
+    HttpResponse<Void> updateBookReaders(long bookId, long readerId);
 
     @Post("/")
-    public HttpResponse<Void> add(@Body BookDTO bookDetails);
+    HttpResponse<Void> add(@Body BookDTO bookDetails);
 
     @Get("/{id}")
-    public Book getBook(long id);
+    Book getBook(long id);
     
     @Put("/{id}")
-    public HttpResponse<Void> updateBook(long id, @Body BookDTO book);
+    HttpResponse<Void> updateBook(long id, @Body BookDTO book);
 
     @Delete("/{id}")
-    public HttpResponse<Void> deleteBook(long id);
+    HttpResponse<Void> deleteBook(long id);
+
+    @Delete("/{bookId}/readers/{readerId}")
+    HttpResponse<Void> deleteBookReader(long bookId, long readerId);
 }
