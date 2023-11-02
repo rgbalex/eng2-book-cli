@@ -34,7 +34,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("uk.ac.york.eng2.bookscli.cli.*")
+        annotations("uk.ac.york.eng2.bookscli.*")
     }
 }
 
