@@ -4,7 +4,7 @@ plugins {
 }
 
 version = "0.1"
-group = "uk.ac.york.eng2.bookscli.cli"
+group = "uk.ac.york.eng2.bookscli"
 
 repositories {
     mavenCentral()
@@ -23,7 +23,7 @@ dependencies {
 
 
 application {
-    mainClass.set("uk.ac.york.eng2.bookscli.cli.BookCliCommand")
+    mainClass.set("uk.ac.york.eng2.bookscli.BookCliCommand")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("11")

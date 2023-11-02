@@ -1,4 +1,4 @@
-package uk.ac.york.eng2.bookscli.cli;
+package uk.ac.york.eng2.bookscli;
 
 import io.micronaut.configuration.picocli.PicocliRunner;
 import picocli.CommandLine.Command;

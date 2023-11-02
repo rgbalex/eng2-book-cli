@@ -3,7 +3,7 @@ package uk.ac.york.eng2.books.cli;
 import io.micronaut.configuration.picocli.PicocliRunner;
 import io.micronaut.context.ApplicationContext;
 import io.micronaut.context.env.Environment;
-import uk.ac.york.eng2.bookscli.cli.BookCliCommand;
+import uk.ac.york.eng2.bookscli.BookCliCommand;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
